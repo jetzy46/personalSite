@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../Components/Header/header";
+import { Header, Infos, Projects } from "../Components/index";
 
 function App() {
   return (
     <MainContainer>
       <Header />
+      <Infos />
+      <Projects />
     </MainContainer>
   );
 }
