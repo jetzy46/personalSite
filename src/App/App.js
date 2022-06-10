@@ -1,8 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import Header from "../Components/Header/header";
 
 function App() {
-  return <MainContainer></MainContainer>;
+  return (
+    <MainContainer>
+      <Header />
+    </MainContainer>
+  );
 }
 
 export default App;
