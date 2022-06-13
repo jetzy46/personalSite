@@ -1,7 +1,117 @@
 import React from "react";
+import styled from "styled-components";
 
-function Projects(props) {
-  return <div></div>;
+function Projects() {
+  return (
+    <MainContainer>
+      <TitleContainer>
+        <h3>Mes Réalisations</h3>
+      </TitleContainer>
+      <ProjectsContainer>
+        <Project>
+          <h5>Portfolio T Porier</h5>
+          <img src="/img/tporier.jpg" alt="" />
+          <p>
+            Création d'un portfolio pour un ami afin d'aider sa recherche d'emploi.
+            <br />
+            Site vitrine développé uniquement en React.
+          </p>
+          <a href="https://github.com/jetzy46/portfolioTP">Repo Github</a>
+          <a href="http://www.thomasporier.fr/" target="_blank" rel="noreferrer">
+            Son site
+          </a>
+        </Project>
+        <Project>
+          <h5>Bierty</h5>
+          <img src="/img/bierty.jpg" alt="" />
+          <p>
+            Création d'un POC fonctionnel pour une startup.
+            <br />
+            L'application est basé sur le conseil de bière personnalisé.
+            <br />
+            Le POC à été réalisé en Meteor, avec la partie FrontEnd en React.
+          </p>
+          <a href="https://bierty.fr/" target="_blank" rel="noreferrer">
+            Leur site
+          </a>
+        </Project>
+        <Project>
+          <h5>Sobre Bike</h5>
+          <img src="/img/sobre.jpg" alt="" />
+          <p>
+            Copie d'un site de cadre de vélo pour m'entrainer.
+            <br />
+            C'est un "site vitrine" refait entièrement en React, responsive.
+          </p>
+          <a href="https://github.com/jetzy46/SobreBikesCopy">Repo Github</a>
+          <a href="http://www.sobre-bikes.fr/" target="_blank" rel="noreferrer">
+            Leur Site
+          </a>
+        </Project>
+        <Project>
+          <h5>Ce site</h5>
+          <img src="/img/jlinol.jpg" alt="" />
+          <p>Création d'un site simple me servant de vitrine, entièrement développé en React</p>
+          <a href="https://github.com/jetzy46/personalSite">Repo Github</a>
+        </Project>
+      </ProjectsContainer>
+    </MainContainer>
+  );
 }
 
 export default Projects;
+
+const MainContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+`;
+
+const TitleContainer = styled.div`
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  > h3 {
+    font-size: 3rem;
+  }
+`;
+const ProjectsContainer = styled.div`
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+`;
+const Project = styled.div`
+  width: 20%;
+  height: 80%;
+  border: 1px solid cyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > h5 {
+    font-size: 1.6rem;
+  }
+
+  > img {
+    max-width: 100%;
+    max-height: 40%;
+  }
+
+  > p {
+    text-align: center;
+  }
+
+  > a {
+    margin-top: 1rem;
+    color: white;
+    :hover {
+      text-decoration: underline;
+    }
+  }
+`;

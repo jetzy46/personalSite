@@ -7,9 +7,7 @@ function Infos() {
       <LeftContainer>
         <img src="/img/me.jpg" alt="Johan" />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, non voluptatum aliquam placeat voluptatibus
-          nemo officiis quibusdam dignissimos possimus, at eum eveniet sunt laborum dolores eligendi modi voluptatem.
-          Similique, saepe!
+          Bonjour, moi c'est Johan ! Je suis un ancien charpentier reconverti développeur web ! <br />
         </p>
       </LeftContainer>
       <RightContainer>
@@ -22,8 +20,8 @@ function Infos() {
           <p>
             <br />
             Systèmes d'exploitation : Linux Mint <br />
-            Workflow : Git, Chrome, FileZilla, Slack, NPM <br />
             IDE : Visual Studio Code <br />
+            Workflow : Git, Chrome, FileZilla, Slack, NPM, Agile <br />
             Autres compétences : maîtrise de l'anglais ( B2 )<br />
             Savoir-être : capacité d'adaptation, travail en équipe, organisation, rigueur
           </p>
@@ -57,6 +55,7 @@ const MainContainer = styled.div`
   align-items: center;
   justify-content: space-around;
 `;
+
 const LeftContainer = styled.div`
   border: 1px solid orange;
   width: 42%;
@@ -69,7 +68,12 @@ const LeftContainer = styled.div`
   > img {
     height: 300px;
   }
+
+  > p {
+    margin-top: 3rem;
+  }
 `;
+
 const RightContainer = styled.div`
   border: 1px solid cyan;
   width: 42%;
@@ -79,6 +83,7 @@ const RightContainer = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 const LogoContainer = styled.div`
   width: 60%;
   height: 150px;
@@ -87,25 +92,32 @@ const LogoContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
   > img {
     height: 100%;
   }
 `;
+
 const Intel = styled.div`
   > h5 {
     font-size: 1.4rem;
     margin: 0;
   }
 `;
-const ShortExplanation = styled.div``;
+
+const ShortExplanation = styled.div`
+  margin: 3rem 0;
+`;
+
 const Files = styled.div`
   width: 60%;
   height: 20%;
-  margin-top: 3rem;
+  // margin-top: 3rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
   > a {
     border: 1px solid lime;
     display: flex;
@@ -113,9 +125,11 @@ const Files = styled.div`
     align-items: center;
     justify-content: center;
     color: white;
+
     :hover {
       transform: scale(1.1);
     }
+
     > img {
       height: 100px;
     }
