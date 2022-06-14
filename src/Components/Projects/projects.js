@@ -9,7 +9,7 @@ function Projects() {
       </TitleContainer>
       <ProjectsContainer>
         <Project>
-          <h5>Portfolio T Porier</h5>
+          <h5>Portfolio Chargé de Production Audiovisuelle</h5>
           <img src="/img/tporier.jpg" alt="" />
           <p>
             Création d'un portfolio pour un ami afin d'aider sa recherche d'emploi.
@@ -64,6 +64,11 @@ export default Projects;
 const MainContainer = styled.div`
   width: 100%;
   height: 100vh;
+
+  @media only screen and (max-width: 899px) {
+    height: auto;
+    min-height: 200vh;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -77,6 +82,13 @@ const TitleContainer = styled.div`
   > h3 {
     font-size: 3rem;
   }
+
+  @media only screen and (max-width: 899px) {
+    height: 15vh;
+    > h3 {
+      font-size: 2.2rem;
+    }
+  }
 `;
 const ProjectsContainer = styled.div`
   width: 100%;
@@ -85,17 +97,23 @@ const ProjectsContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+
+  @media only screen and (max-width: 899px) {
+    flex-direction: column;
+    justify-content: center;
+    height: 92%;
+  }
 `;
 const Project = styled.div`
   width: 20%;
   height: 80%;
-  border: 1px solid cyan;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   > h5 {
     font-size: 1.6rem;
+    text-align: center;
   }
 
   > img {
@@ -113,5 +131,11 @@ const Project = styled.div`
     :hover {
       text-decoration: underline;
     }
+  }
+
+  @media only screen and (max-width: 899px) {
+    width: 80%;
+    height: auto;
+    min-height: 50vh;
   }
 `;

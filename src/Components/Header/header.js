@@ -14,7 +14,13 @@ function Header(props) {
       <ImageBackground />
       <Triangle />
       <TextContainer>
-        <h1>Johan Linol - Dev Web Junior</h1>
+        {window.innerWidth <= 899 ? (
+          <h1>
+            Johan Linol <br /> Dev Web Junior
+          </h1>
+        ) : (
+          <h1>Johan Linol - Dev Web Junior</h1>
+        )}
         <LogoContainer>
           <img src="/img/mint.png" alt="" />
           <img src="/img/react.png" alt="" />
@@ -76,8 +82,17 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   > h1 {
     font-size: 4rem;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 899px) {
+    top: 35%;
+    > h1 {
+      font-size: 2.5rem;
+    }
   }
 `;
 
@@ -90,6 +105,13 @@ const LogoContainer = styled.div`
   justify-content: space-around;
   > img {
     height: 200px;
+  }
+
+  @media only screen and (max-width: 899px) {
+    > img {
+      height: 10vh;
+      margin-top: 2rem;
+    }
   }
 `;
 

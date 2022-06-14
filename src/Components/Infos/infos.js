@@ -7,7 +7,12 @@ function Infos() {
       <LeftContainer>
         <img src="/img/me.jpg" alt="Johan" />
         <p>
-          Bonjour, moi c'est Johan ! Je suis un ancien charpentier reconverti développeur web ! <br />
+          Bonjour, moi c'est Johan ! Je suis un ancien charpentier <br />
+          reconverti développeur web ! <br />
+          Après plusieurs années, j'ai décidé de changer de voie dans un secteur qui m'as toujours fasciné: le
+          développement.
+          <br />
+          Après une année de reconversion faite à Digital Campus à Labège, me voilà prêt à accomplir mes rêves.
         </p>
       </LeftContainer>
       <RightContainer>
@@ -27,8 +32,12 @@ function Infos() {
           </p>
         </Intel>
         <ShortExplanation>
-          spécialisé dans le front-end, j'adore voir les projets prendre forme, et creer un site, une interface agréable
-          pour les futur utilisateurs
+          Spécialisé dans le front-end, j'adore voir les projets prendre forme, et créer un site, une interface agréable
+          pour les futur utilisateurs.
+          <br />
+          Partir de zéro, une page blanche et pouvoir construire quelque chose qui attire, qui est intéressant est
+          vraiment une satisfaction pour moi, et ça ne part pas, projet après projet ! expériences mêlant création,
+          réalisation, autonomie et travail d'équipe.
         </ShortExplanation>
         <Files>
           <a href="/files/motivJohanLinol.pdf" download>
@@ -48,16 +57,23 @@ function Infos() {
 export default Infos;
 
 const MainContainer = styled.div`
+  border: 1px solid lime;
+
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+
+  @media only screen and (max-width: 899px) {
+    height: auto;
+    min-height: 150vh;
+    flex-direction: column;
+  }
 `;
 
 const LeftContainer = styled.div`
-  border: 1px solid orange;
   width: 42%;
   height: 100%;
   display: flex;
@@ -72,16 +88,35 @@ const LeftContainer = styled.div`
   > p {
     margin-top: 3rem;
   }
+
+  @media only screen and (max-width: 899px) {
+    width: 80%;
+    height: 40%;
+    min-height: 80vh;
+
+    > img {
+      height: 200px;
+    }
+
+    > p {
+      text-align: center;
+    }
+  }
 `;
 
 const RightContainer = styled.div`
-  border: 1px solid cyan;
   width: 42%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 899px) {
+    width: 80%;
+    height: 60%;
+    min-height: 80vh;
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -95,6 +130,13 @@ const LogoContainer = styled.div`
 
   > img {
     height: 100%;
+  }
+
+  @media only screen and (max-width: 899px) {
+    width: 75%;
+    > img {
+      height: 10vh;
+    }
   }
 `;
 
@@ -112,14 +154,12 @@ const ShortExplanation = styled.div`
 const Files = styled.div`
   width: 60%;
   height: 20%;
-  // margin-top: 3rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
   > a {
-    border: 1px solid lime;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,6 +172,14 @@ const Files = styled.div`
 
     > img {
       height: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 899px) {
+    width: 90%;
+
+    > img {
+      height: 10vh;
     }
   }
 `;
