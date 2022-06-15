@@ -68,6 +68,7 @@ const MainContainer = styled.div`
   @media only screen and (max-width: 899px) {
     height: auto;
     min-height: 200vh;
+    margin-top: 2rem;
   }
 `;
 

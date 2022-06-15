@@ -19,7 +19,9 @@ function Header(props) {
             Johan Linol <br /> Dev Web Junior
           </h1>
         ) : (
-          <h1>Johan Linol - Dev Web Junior</h1>
+          <h1>
+            Johan Linol <br /> Développeur Web Junior
+          </h1>
         )}
         <LogoContainer>
           <img src="/img/mint.png" alt="" />

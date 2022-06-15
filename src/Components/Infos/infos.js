@@ -7,12 +7,11 @@ function Infos() {
       <LeftContainer>
         <img src="/img/me.jpg" alt="Johan" />
         <p>
-          Bonjour, moi c'est Johan ! Je suis un ancien charpentier <br />
-          reconverti développeur web ! <br />
+          Bonjour, moi c'est Johan ! Je suis un ancien charpentier reconverti développeur web ! <br />
           Après plusieurs années, j'ai décidé de changer de voie dans un secteur qui m'as toujours fasciné: le
           développement.
           <br />
-          Après une année de reconversion faite à Digital Campus à Labège, me voilà prêt à accomplir mes rêves.
+          Après une année de reconversion faite à Digital Campus à Labège, me voilà , prêt à faire ce que j'aime !
         </p>
       </LeftContainer>
       <RightContainer>
@@ -40,11 +39,11 @@ function Infos() {
           réalisation, autonomie et travail d'équipe.
         </ShortExplanation>
         <Files>
-          <a href="/files/motivJohanLinol.pdf" download>
+          <a href="/files/motivationJohanLINOL.pdf" download>
             <img src="/img/logo-pdf.png" alt="" />
             Lettre de motivation
           </a>
-          <a href="/files/CVJohanLinol.pdf" download>
+          <a href="/files/CVJohanLINOL.pdf" download>
             <img src="/img/logo-pdf.png" alt="" />
             Mon CV
           </a>
@@ -57,8 +56,6 @@ function Infos() {
 export default Infos;
 
 const MainContainer = styled.div`
-  border: 1px solid lime;
-
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -86,6 +83,7 @@ const LeftContainer = styled.div`
   }
 
   > p {
+    font-size: 1.3rem;
     margin-top: 3rem;
   }
 
@@ -93,6 +91,11 @@ const LeftContainer = styled.div`
     width: 80%;
     height: 40%;
     min-height: 80vh;
+
+    > p {
+      font-size: 1rem;
+      margin-top: 3rem;
+    }
 
     > img {
       height: 200px;
@@ -145,10 +148,26 @@ const Intel = styled.div`
     font-size: 1.4rem;
     margin: 0;
   }
+
+  > p {
+    font-size: 1.3rem;
+  }
+
+  @media only screen and (max-width: 899px) {
+    > p {
+      font-size: 1rem;
+    }
+  }
 `;
 
 const ShortExplanation = styled.div`
+  font-size: 1.3rem;
   margin: 3rem 0;
+
+  @media only screen and (max-width: 899px) {
+    font-size: 1rem;
+    text-align: center;
+  }
 `;
 
 const Files = styled.div`
