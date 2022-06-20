@@ -27,7 +27,7 @@ function Projects() {
           <p>
             Création d'un POC fonctionnel pour une startup.
             <br />
-            L'application est basé sur le conseil de bière personnalisé.
+            L'application est basée sur le conseil de bière personnalisé.
             <br />
             Le POC à été réalisé en Meteor, avec la partie FrontEnd en React.
           </p>
@@ -39,9 +39,9 @@ function Projects() {
           <h5>Sobre Bike</h5>
           <img src="/img/sobre.jpg" alt="" />
           <p>
-            Copie d'un site de cadre de vélo pour m'entrainer.
+            Copie d'un site de cadre de vélo pour m'entraîner.
             <br />
-            C'est un "site vitrine" refait entièrement en React, responsive.
+            C'est un site vitrine refait entièrement en React, responsive.
           </p>
           <a href="https://github.com/jetzy46/SobreBikesCopy">Repo Github</a>
           <a href="http://www.sobre-bikes.fr/" target="_blank" rel="noreferrer">

@@ -8,7 +8,7 @@ function Infos() {
         <img src="/img/me.jpg" alt="Johan" />
         <p>
           Bonjour, moi c'est Johan ! Je suis un ancien charpentier reconverti développeur web ! <br />
-          Après plusieurs années, j'ai décidé de changer de voie dans un secteur qui m'as toujours fasciné: le
+          Après plusieurs années, j'ai décidé de changer de voie dans un secteur qui m'a toujours fasciné: le
           développement.
           <br />
           Après une année de reconversion faite à Digital Campus à Labège, me voilà , prêt à faire ce que j'aime !
@@ -26,17 +26,16 @@ function Infos() {
             Systèmes d'exploitation : Linux Mint <br />
             IDE : Visual Studio Code <br />
             Workflow : Git, Chrome, FileZilla, Slack, NPM, Agile <br />
-            Autres compétences : maîtrise de l'anglais ( B2 )<br />
+            Autres compétences : maîtrise de l'anglais ( B1 )<br />
             Savoir-être : capacité d'adaptation, travail en équipe, organisation, rigueur
           </p>
         </Intel>
         <ShortExplanation>
           Spécialisé dans le front-end, j'adore voir les projets prendre forme, et créer un site, une interface agréable
-          pour les futur utilisateurs.
+          pour les futurs utilisateurs.
           <br />
           Partir de zéro, une page blanche et pouvoir construire quelque chose qui attire, qui est intéressant est
-          vraiment une satisfaction pour moi, et ça ne part pas, projet après projet ! expériences mêlant création,
-          réalisation, autonomie et travail d'équipe.
+          vraiment une satisfaction pour moi, et ça ne part pas, projet après projet !
         </ShortExplanation>
         <Files>
           <a href="/files/motivationJohanLINOL.pdf" download>
